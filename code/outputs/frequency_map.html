@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_025d250910f2f70c4366f04e35b106f7 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_025d250910f2f70c4366f04e35b106f7" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_025d250910f2f70c4366f04e35b106f7 = L.map(
+                "map_025d250910f2f70c4366f04e35b106f7",
+                {
+                    center: [49.4521, 11.0767],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_7fd6354ca71376c1795fc864ac230699 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_7fd6354ca71376c1795fc864ac230699.addTo(map_025d250910f2f70c4366f04e35b106f7);
+        
+    
+            var circle_marker_932db287bbf983108e7c9cba6b3b49cb = L.circleMarker(
+                [49.4526024, 11.0866823],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 72, "stroke": true, "weight": 3}
+            ).addTo(map_025d250910f2f70c4366f04e35b106f7);
+        
+    
+        var popup_1cb2a0d406c4c2ee4088591c04fb9068 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_40b0d71eff9edfc4e240d108c6f3d8c7 = $(`<div id="html_40b0d71eff9edfc4e240d108c6f3d8c7" style="width: 100.0%; height: 100.0%;">Street: Wöhrder Wiese <br> Frequency: 72</div>`)[0];
+                popup_1cb2a0d406c4c2ee4088591c04fb9068.setContent(html_40b0d71eff9edfc4e240d108c6f3d8c7);
+            
+        
+
+        circle_marker_932db287bbf983108e7c9cba6b3b49cb.bindPopup(popup_1cb2a0d406c4c2ee4088591c04fb9068)
+        ;
+
+        
+    
+    
+            var circle_marker_cf0078c8c7cbe3bae8c634f017973147 = L.circleMarker(
+                [49.4650002, 11.100873],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 70, "stroke": true, "weight": 3}
+            ).addTo(map_025d250910f2f70c4366f04e35b106f7);
+        
+    
+        var popup_b1cc70922a11a703e36e0bfcd7a6b08a = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_4bd54967e86380429bfb461f4279889a = $(`<div id="html_4bd54967e86380429bfb461f4279889a" style="width: 100.0%; height: 100.0%;">Street: Schoppershof <br> Frequency: 70</div>`)[0];
+                popup_b1cc70922a11a703e36e0bfcd7a6b08a.setContent(html_4bd54967e86380429bfb461f4279889a);
+            
+        
+
+        circle_marker_cf0078c8c7cbe3bae8c634f017973147.bindPopup(popup_b1cc70922a11a703e36e0bfcd7a6b08a)
+        ;
+
+        
+    
+    
+            var circle_marker_0ff90dd0582d43571d9d7a6125f145f8 = L.circleMarker(
+                [49.443019, 11.068498],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 58, "stroke": true, "weight": 3}
+            ).addTo(map_025d250910f2f70c4366f04e35b106f7);
+        
+    
+        var popup_0d7447b36b6d53a6146c19fd3302d061 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_0a1b11e7f99365061f144ecfab00c79e = $(`<div id="html_0a1b11e7f99365061f144ecfab00c79e" style="width: 100.0%; height: 100.0%;">Street: Steinbühl <br> Frequency: 58</div>`)[0];
+                popup_0d7447b36b6d53a6146c19fd3302d061.setContent(html_0a1b11e7f99365061f144ecfab00c79e);
+            
+        
+
+        circle_marker_0ff90dd0582d43571d9d7a6125f145f8.bindPopup(popup_0d7447b36b6d53a6146c19fd3302d061)
+        ;
+
+        
+    
+    
+            var circle_marker_f7127ffd3d21ffd8c2bf0c36bf443561 = L.circleMarker(
+                [49.46331, 11.084879],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 52, "stroke": true, "weight": 3}
+            ).addTo(map_025d250910f2f70c4366f04e35b106f7);
+        
+    
+        var popup_e38c4904256a449b4565d8b571d226f6 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_712db65762eaa234fc4349d548e4966a = $(`<div id="html_712db65762eaa234fc4349d548e4966a" style="width: 100.0%; height: 100.0%;">Street: Maxfeld <br> Frequency: 52</div>`)[0];
+                popup_e38c4904256a449b4565d8b571d226f6.setContent(html_712db65762eaa234fc4349d548e4966a);
+            
+        
+
+        circle_marker_f7127ffd3d21ffd8c2bf0c36bf443561.bindPopup(popup_e38c4904256a449b4565d8b571d226f6)
+        ;
+
+        
+    
+    
+            var circle_marker_450558fc0a1c6da9ec47ae4198ff1ab4 = L.circleMarker(
+                [49.4520493, 11.0521746],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 48, "stroke": true, "weight": 3}
+            ).addTo(map_025d250910f2f70c4366f04e35b106f7);
+        
+    
+        var popup_65070ed55389c170627f9419d5dfd957 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_61981b8dc1259f4d793c965854460605 = $(`<div id="html_61981b8dc1259f4d793c965854460605" style="width: 100.0%; height: 100.0%;">Street: Bärenschanze <br> Frequency: 48</div>`)[0];
+                popup_65070ed55389c170627f9419d5dfd957.setContent(html_61981b8dc1259f4d793c965854460605);
+            
+        
+
+        circle_marker_450558fc0a1c6da9ec47ae4198ff1ab4.bindPopup(popup_65070ed55389c170627f9419d5dfd957)
+        ;
+
+        
+    
+    
+            var circle_marker_76ad0c71895cdde8cfe017cbe58fedb9 = L.circleMarker(
+                [49.440971, 11.085477],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 45, "stroke": true, "weight": 3}
+            ).addTo(map_025d250910f2f70c4366f04e35b106f7);
+        
+    
+        var popup_c566336d50ffc4716b3c6be1ed1f5810 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_6cae699f44e2ec66c581ecbedde22248 = $(`<div id="html_6cae699f44e2ec66c581ecbedde22248" style="width: 100.0%; height: 100.0%;">Street: Hummelsteiner Weg <br> Frequency: 45</div>`)[0];
+                popup_c566336d50ffc4716b3c6be1ed1f5810.setContent(html_6cae699f44e2ec66c581ecbedde22248);
+            
+        
+
+        circle_marker_76ad0c71895cdde8cfe017cbe58fedb9.bindPopup(popup_c566336d50ffc4716b3c6be1ed1f5810)
+        ;
+
+        
+    
+    
+            var circle_marker_29d3123558d5edea8c72cf2fa0000bb2 = L.circleMarker(
+                [49.458578, 11.103235],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 42, "stroke": true, "weight": 3}
+            ).addTo(map_025d250910f2f70c4366f04e35b106f7);
+        
+    
+        var popup_11c3906f6380ecc041c1d5eb92da6c8d = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_fac4c8274684705650cbac396cf48602 = $(`<div id="html_fac4c8274684705650cbac396cf48602" style="width: 100.0%; height: 100.0%;">Street: Veilhofstraße <br> Frequency: 42</div>`)[0];
+                popup_11c3906f6380ecc041c1d5eb92da6c8d.setContent(html_fac4c8274684705650cbac396cf48602);
+            
+        
+
+        circle_marker_29d3123558d5edea8c72cf2fa0000bb2.bindPopup(popup_11c3906f6380ecc041c1d5eb92da6c8d)
+        ;
+
+        
+    
+    
+            var circle_marker_574d10290e421fd51a168522bb4a5e7c = L.circleMarker(
+                [49.461849, 11.022392],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 38, "stroke": true, "weight": 3}
+            ).addTo(map_025d250910f2f70c4366f04e35b106f7);
+        
+    
+        var popup_05fd88ee1e99e3b774b0ecd5863b3cac = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_da306621225b1125a451b4cd33c7091e = $(`<div id="html_da306621225b1125a451b4cd33c7091e" style="width: 100.0%; height: 100.0%;">Street: Muggenhof <br> Frequency: 38</div>`)[0];
+                popup_05fd88ee1e99e3b774b0ecd5863b3cac.setContent(html_da306621225b1125a451b4cd33c7091e);
+            
+        
+
+        circle_marker_574d10290e421fd51a168522bb4a5e7c.bindPopup(popup_05fd88ee1e99e3b774b0ecd5863b3cac)
+        ;
+
+        
+    
+    
+            var circle_marker_e732d6539655b66b818b969b461d754c = L.circleMarker(
+                [49.47296, 11.063857],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 37, "stroke": true, "weight": 3}
+            ).addTo(map_025d250910f2f70c4366f04e35b106f7);
+        
+    
+        var popup_9e6669d3321bc9979f84abba20259b45 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_f5d1852f6abfe2d44dab5a730e76c446 = $(`<div id="html_f5d1852f6abfe2d44dab5a730e76c446" style="width: 100.0%; height: 100.0%;">Street: Thon <br> Frequency: 37</div>`)[0];
+                popup_9e6669d3321bc9979f84abba20259b45.setContent(html_f5d1852f6abfe2d44dab5a730e76c446);
+            
+        
+
+        circle_marker_e732d6539655b66b818b969b461d754c.bindPopup(popup_9e6669d3321bc9979f84abba20259b45)
+        ;
+
+        
+    
+    
+            var circle_marker_e78904a60731205fcace4cd5849aa930 = L.circleMarker(
+                [49.4442711, 11.1127853],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 34, "stroke": true, "weight": 3}
+            ).addTo(map_025d250910f2f70c4366f04e35b106f7);
+        
+    
+        var popup_8906dc5fca7eb48c23e5003d7c40ea8f = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_ca518ac731a74a8a7a4f9be92bf55ec6 = $(`<div id="html_ca518ac731a74a8a7a4f9be92bf55ec6" style="width: 100.0%; height: 100.0%;">Street: Gleißhammer Bahnhof <br> Frequency: 34</div>`)[0];
+                popup_8906dc5fca7eb48c23e5003d7c40ea8f.setContent(html_ca518ac731a74a8a7a4f9be92bf55ec6);
+            
+        
+
+        circle_marker_e78904a60731205fcace4cd5849aa930.bindPopup(popup_8906dc5fca7eb48c23e5003d7c40ea8f)
+        ;
+
+        
+    
+    
+            var circle_marker_336ccd0b06dd962073a75ac9618fff44 = L.circleMarker(
+                [49.450758, 11.056274],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 27, "stroke": true, "weight": 3}
+            ).addTo(map_025d250910f2f70c4366f04e35b106f7);
+        
+    
+        var popup_a898c7393f2cce244796cd66ef58d780 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_71347ca02a3872b0eb3f30da3e42bf22 = $(`<div id="html_71347ca02a3872b0eb3f30da3e42bf22" style="width: 100.0%; height: 100.0%;">Street: Gostenhof <br> Frequency: 27</div>`)[0];
+                popup_a898c7393f2cce244796cd66ef58d780.setContent(html_71347ca02a3872b0eb3f30da3e42bf22);
+            
+        
+
+        circle_marker_336ccd0b06dd962073a75ac9618fff44.bindPopup(popup_a898c7393f2cce244796cd66ef58d780)
+        ;
+
+        
+    
+    
+            var circle_marker_8a7fb68a3039d38c27cbbad6837cdb30 = L.circleMarker(
+                [49.4344673, 11.0485001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26, "stroke": true, "weight": 3}
+            ).addTo(map_025d250910f2f70c4366f04e35b106f7);
+        
+    
+        var popup_36e2e607670a2e78dff8ba8ca4c8e983 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_bfdaa578f2fb89b6fbc75e8fd31849d2 = $(`<div id="html_bfdaa578f2fb89b6fbc75e8fd31849d2" style="width: 100.0%; height: 100.0%;">Street: Schweinau <br> Frequency: 26</div>`)[0];
+                popup_36e2e607670a2e78dff8ba8ca4c8e983.setContent(html_bfdaa578f2fb89b6fbc75e8fd31849d2);
+            
+        
+
+        circle_marker_8a7fb68a3039d38c27cbbad6837cdb30.bindPopup(popup_36e2e607670a2e78dff8ba8ca4c8e983)
+        ;
+
+        
+    
+    
+            var circle_marker_bd24c2af02353418b540ddc1dbb4c4a1 = L.circleMarker(
+                [49.4423981, 11.0448551],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26, "stroke": true, "weight": 3}
+            ).addTo(map_025d250910f2f70c4366f04e35b106f7);
+        
+    
+        var popup_f75a45e9d4a943be988a556b06da3125 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_b337a4f8503b5dd291480ba5acd7ba25 = $(`<div id="html_b337a4f8503b5dd291480ba5acd7ba25" style="width: 100.0%; height: 100.0%;">Street: Sündersbühl <br> Frequency: 26</div>`)[0];
+                popup_f75a45e9d4a943be988a556b06da3125.setContent(html_b337a4f8503b5dd291480ba5acd7ba25);
+            
+        
+
+        circle_marker_bd24c2af02353418b540ddc1dbb4c4a1.bindPopup(popup_f75a45e9d4a943be988a556b06da3125)
+        ;
+
+        
+    
+    
+            var circle_marker_4e1b6c39522b3d6099cf668eb590465a = L.circleMarker(
+                [49.459062, 11.131607],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 24, "stroke": true, "weight": 3}
+            ).addTo(map_025d250910f2f70c4366f04e35b106f7);
+        
+    
+        var popup_1bbf8b30f5fd4d0b6d782a6c1f6a9899 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_5f7b9e54ff6792cc0f5de8b2a3732d1d = $(`<div id="html_5f7b9e54ff6792cc0f5de8b2a3732d1d" style="width: 100.0%; height: 100.0%;">Street: Mögeldorf <br> Frequency: 24</div>`)[0];
+                popup_1bbf8b30f5fd4d0b6d782a6c1f6a9899.setContent(html_5f7b9e54ff6792cc0f5de8b2a3732d1d);
+            
+        
+
+        circle_marker_4e1b6c39522b3d6099cf668eb590465a.bindPopup(popup_1bbf8b30f5fd4d0b6d782a6c1f6a9899)
+        ;
+
+        
+    
+    
+            var circle_marker_da7f24eb49407594ea03d53e92a86e4d = L.circleMarker(
+                [49.450706, 11.103027],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 24, "stroke": true, "weight": 3}
+            ).addTo(map_025d250910f2f70c4366f04e35b106f7);
+        
+    
+        var popup_ba18404ae7dc6fa484664501886f3bea = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_61a9c7b07e39133376319e8632c55686 = $(`<div id="html_61a9c7b07e39133376319e8632c55686" style="width: 100.0%; height: 100.0%;">Street: Tullnaupark <br> Frequency: 24</div>`)[0];
+                popup_ba18404ae7dc6fa484664501886f3bea.setContent(html_61a9c7b07e39133376319e8632c55686);
+            
+        
+
+        circle_marker_da7f24eb49407594ea03d53e92a86e4d.bindPopup(popup_ba18404ae7dc6fa484664501886f3bea)
+        ;
+
+        
+    
+    
+            var circle_marker_5067747f90cc66b9c4773caf2e1f61d8 = L.circleMarker(
+                [49.425365, 11.065174],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16, "stroke": true, "weight": 3}
+            ).addTo(map_025d250910f2f70c4366f04e35b106f7);
+        
+    
+        var popup_28267a61210ff2abc1f632306f22ae0a = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_0e52f3fbcb2fe6084308e139a2e00993 = $(`<div id="html_0e52f3fbcb2fe6084308e139a2e00993" style="width: 100.0%; height: 100.0%;">Street: Gibitzenhof <br> Frequency: 16</div>`)[0];
+                popup_28267a61210ff2abc1f632306f22ae0a.setContent(html_0e52f3fbcb2fe6084308e139a2e00993);
+            
+        
+
+        circle_marker_5067747f90cc66b9c4773caf2e1f61d8.bindPopup(popup_28267a61210ff2abc1f632306f22ae0a)
+        ;
+
+        
+    
+    
+            var circle_marker_9e74fdb4ec1cc89662e0116f441ccbe9 = L.circleMarker(
+                [49.4809113, 11.117795],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16, "stroke": true, "weight": 3}
+            ).addTo(map_025d250910f2f70c4366f04e35b106f7);
+        
+    
+        var popup_d5e2f93008d00c50d85ba164d31d762e = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_4bca095fb04e62a9b6cf35095d942ba7 = $(`<div id="html_4bca095fb04e62a9b6cf35095d942ba7" style="width: 100.0%; height: 100.0%;">Street: Schafhofstraße <br> Frequency: 16</div>`)[0];
+                popup_d5e2f93008d00c50d85ba164d31d762e.setContent(html_4bca095fb04e62a9b6cf35095d942ba7);
+            
+        
+
+        circle_marker_9e74fdb4ec1cc89662e0116f441ccbe9.bindPopup(popup_d5e2f93008d00c50d85ba164d31d762e)
+        ;
+
+        
+    
+    
+            var circle_marker_37ec1398517e42ce1557f52d3140bc8f = L.circleMarker(
+                [49.4708939, 11.0819979],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14, "stroke": true, "weight": 3}
+            ).addTo(map_025d250910f2f70c4366f04e35b106f7);
+        
+    
+        var popup_597523768993a589994e640d51006281 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_683964e4a4e68683d3faaced786338c3 = $(`<div id="html_683964e4a4e68683d3faaced786338c3" style="width: 100.0%; height: 100.0%;">Street: Schleifweg <br> Frequency: 14</div>`)[0];
+                popup_597523768993a589994e640d51006281.setContent(html_683964e4a4e68683d3faaced786338c3);
+            
+        
+
+        circle_marker_37ec1398517e42ce1557f52d3140bc8f.bindPopup(popup_597523768993a589994e640d51006281)
+        ;
+
+        
+    
+    
+            var circle_marker_70b9f0423dbf328dd81cd8eb9e34ede9 = L.circleMarker(
+                [49.4725151, 11.1370878],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13, "stroke": true, "weight": 3}
+            ).addTo(map_025d250910f2f70c4366f04e35b106f7);
+        
+    
+        var popup_e2b8099e687ef4ea880b59ff0993bc2f = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_e6e06d212373037ebae62dd70dd28cd6 = $(`<div id="html_e6e06d212373037ebae62dd70dd28cd6" style="width: 100.0%; height: 100.0%;">Street: Erlenstegen <br> Frequency: 13</div>`)[0];
+                popup_e2b8099e687ef4ea880b59ff0993bc2f.setContent(html_e6e06d212373037ebae62dd70dd28cd6);
+            
+        
+
+        circle_marker_70b9f0423dbf328dd81cd8eb9e34ede9.bindPopup(popup_e2b8099e687ef4ea880b59ff0993bc2f)
+        ;
+
+        
+    
+    
+            var circle_marker_20730f750d568e98cc591b1d37b40423 = L.circleMarker(
+                [49.485654, 11.1051],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_025d250910f2f70c4366f04e35b106f7);
+        
+    
+        var popup_960956c514e5ebc0af5d5deb9394cc47 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_91d44f1f1a8eacbc0d69338c34a59ab6 = $(`<div id="html_91d44f1f1a8eacbc0d69338c34a59ab6" style="width: 100.0%; height: 100.0%;">Street: Ziegelstein <br> Frequency: 12</div>`)[0];
+                popup_960956c514e5ebc0af5d5deb9394cc47.setContent(html_91d44f1f1a8eacbc0d69338c34a59ab6);
+            
+        
+
+        circle_marker_20730f750d568e98cc591b1d37b40423.bindPopup(popup_960956c514e5ebc0af5d5deb9394cc47)
+        ;
+
+        
+    
+    
+            var circle_marker_95fb458de4ed88fb41d11aef0eabac85 = L.circleMarker(
+                [49.4696465, 11.0286903],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_025d250910f2f70c4366f04e35b106f7);
+        
+    
+        var popup_61277c78b701dcab1a50c46b0d15dbcb = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_322b2705817dd38a6b133977c46cdc82 = $(`<div id="html_322b2705817dd38a6b133977c46cdc82" style="width: 100.0%; height: 100.0%;">Street: Schniegling <br> Frequency: 12</div>`)[0];
+                popup_61277c78b701dcab1a50c46b0d15dbcb.setContent(html_322b2705817dd38a6b133977c46cdc82);
+            
+        
+
+        circle_marker_95fb458de4ed88fb41d11aef0eabac85.bindPopup(popup_61277c78b701dcab1a50c46b0d15dbcb)
+        ;
+
+        
+    
+    
+            var circle_marker_083ef4447b4e0372ecaeb3890e5368a0 = L.circleMarker(
+                [49.458416, 11.032791],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11, "stroke": true, "weight": 3}
+            ).addTo(map_025d250910f2f70c4366f04e35b106f7);
+        
+    
+        var popup_94dd46c1e8c2437092a1fd8156a02d26 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_7b8c74841dee5ca4d7ff8a0400472784 = $(`<div id="html_7b8c74841dee5ca4d7ff8a0400472784" style="width: 100.0%; height: 100.0%;">Street: Eberhardshof <br> Frequency: 11</div>`)[0];
+                popup_94dd46c1e8c2437092a1fd8156a02d26.setContent(html_7b8c74841dee5ca4d7ff8a0400472784);
+            
+        
+
+        circle_marker_083ef4447b4e0372ecaeb3890e5368a0.bindPopup(popup_94dd46c1e8c2437092a1fd8156a02d26)
+        ;
+
+        
+    
+    
+            var circle_marker_dfbdb8082b56deb6dc1e3578d904e437 = L.circleMarker(
+                [49.4504738, 11.0033836],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11, "stroke": true, "weight": 3}
+            ).addTo(map_025d250910f2f70c4366f04e35b106f7);
+        
+    
+        var popup_324937024cd2edade87337adca017fd8 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_618f180366d38dd2573e65dcfe26c589 = $(`<div id="html_618f180366d38dd2573e65dcfe26c589" style="width: 100.0%; height: 100.0%;">Street: Höfener Spange <br> Frequency: 11</div>`)[0];
+                popup_324937024cd2edade87337adca017fd8.setContent(html_618f180366d38dd2573e65dcfe26c589);
+            
+        
+
+        circle_marker_dfbdb8082b56deb6dc1e3578d904e437.bindPopup(popup_324937024cd2edade87337adca017fd8)
+        ;
+
+        
+    
+    
+            var circle_marker_27eb83e0e5123dfb7ac5f1de6afde7cd = L.circleMarker(
+                [49.4284172, 11.1412668],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11, "stroke": true, "weight": 3}
+            ).addTo(map_025d250910f2f70c4366f04e35b106f7);
+        
+    
+        var popup_ad4c80fb34e3914de65256dc1415ced4 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_50b6661a512f335a904bbc440d396633 = $(`<div id="html_50b6661a512f335a904bbc440d396633" style="width: 100.0%; height: 100.0%;">Street: Zerzabelshof Ost <br> Frequency: 11</div>`)[0];
+                popup_ad4c80fb34e3914de65256dc1415ced4.setContent(html_50b6661a512f335a904bbc440d396633);
+            
+        
+
+        circle_marker_27eb83e0e5123dfb7ac5f1de6afde7cd.bindPopup(popup_ad4c80fb34e3914de65256dc1415ced4)
+        ;
+
+        
+    
+    
+            var circle_marker_2f2a57064513593f7241ceb30d24b419 = L.circleMarker(
+                [49.424258, 11.090089],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11, "stroke": true, "weight": 3}
+            ).addTo(map_025d250910f2f70c4366f04e35b106f7);
+        
+    
+        var popup_0b7e65e9e477b20b2c73dd8dd16a5690 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_bbe93322fd6897b9c54f893c01d5c820 = $(`<div id="html_bbe93322fd6897b9c54f893c01d5c820" style="width: 100.0%; height: 100.0%;">Street: Hasenbuck <br> Frequency: 11</div>`)[0];
+                popup_0b7e65e9e477b20b2c73dd8dd16a5690.setContent(html_bbe93322fd6897b9c54f893c01d5c820);
+            
+        
+
+        circle_marker_2f2a57064513593f7241ceb30d24b419.bindPopup(popup_0b7e65e9e477b20b2c73dd8dd16a5690)
+        ;
+
+        
+    
+    
+            var circle_marker_18fd813841024670afec0cf255c5bec4 = L.circleMarker(
+                [49.409965, 11.04741],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_025d250910f2f70c4366f04e35b106f7);
+        
+    
+        var popup_0a6db69f2f90806b46732ef90805cafa = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_cd206bd90792d47f57682812b44db1d6 = $(`<div id="html_cd206bd90792d47f57682812b44db1d6" style="width: 100.0%; height: 100.0%;">Street: Eibach Bahnhof <br> Frequency: 10</div>`)[0];
+                popup_0a6db69f2f90806b46732ef90805cafa.setContent(html_cd206bd90792d47f57682812b44db1d6);
+            
+        
+
+        circle_marker_18fd813841024670afec0cf255c5bec4.bindPopup(popup_0a6db69f2f90806b46732ef90805cafa)
+        ;
+
+        
+    
+    
+            var circle_marker_65729441b8dad48eba540d092621016c = L.circleMarker(
+                [49.3826141, 11.0376472],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(map_025d250910f2f70c4366f04e35b106f7);
+        
+    
+        var popup_55e94a9aeaf6b71eaaef4ddb6b1c56a0 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_6f6a73ef2da377f0707e0b2aac839404 = $(`<div id="html_6f6a73ef2da377f0707e0b2aac839404" style="width: 100.0%; height: 100.0%;">Street: Reichelsdorf Bahnhof <br> Frequency: 9</div>`)[0];
+                popup_55e94a9aeaf6b71eaaef4ddb6b1c56a0.setContent(html_6f6a73ef2da377f0707e0b2aac839404);
+            
+        
+
+        circle_marker_65729441b8dad48eba540d092621016c.bindPopup(popup_55e94a9aeaf6b71eaaef4ddb6b1c56a0)
+        ;
+
+        
+    
+    
+            var circle_marker_d9147ac6e01c4683446cb8275fd33e97 = L.circleMarker(
+                [49.435676, 11.115865],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_025d250910f2f70c4366f04e35b106f7);
+        
+    
+        var popup_d38e1d8b03e03fcf0be446949344feef = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_dad774472cc2f1dc0c2255e1a11ebbad = $(`<div id="html_dad774472cc2f1dc0c2255e1a11ebbad" style="width: 100.0%; height: 100.0%;">Street: Dutzendteich <br> Frequency: 8</div>`)[0];
+                popup_d38e1d8b03e03fcf0be446949344feef.setContent(html_dad774472cc2f1dc0c2255e1a11ebbad);
+            
+        
+
+        circle_marker_d9147ac6e01c4683446cb8275fd33e97.bindPopup(popup_d38e1d8b03e03fcf0be446949344feef)
+        ;
+
+        
+    
+    
+            var circle_marker_d13ee941c0a639e1dfc56e84a181300d = L.circleMarker(
+                [49.471199, 11.0373125],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_025d250910f2f70c4366f04e35b106f7);
+        
+    
+        var popup_16562a9a8803a2ffa542d3a65644061d = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_e39c7685551de7507722625caa2e9d6c = $(`<div id="html_e39c7685551de7507722625caa2e9d6c" style="width: 100.0%; height: 100.0%;">Street: Wetzendorf West <br> Frequency: 8</div>`)[0];
+                popup_16562a9a8803a2ffa542d3a65644061d.setContent(html_e39c7685551de7507722625caa2e9d6c);
+            
+        
+
+        circle_marker_d13ee941c0a639e1dfc56e84a181300d.bindPopup(popup_16562a9a8803a2ffa542d3a65644061d)
+        ;
+
+        
+    
+    
+            var circle_marker_491434ddc895cd15a9b08b0b0a76ff1f = L.circleMarker(
+                [49.405194, 11.111565],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_025d250910f2f70c4366f04e35b106f7);
+        
+    
+        var popup_61b7e4d6f3c94a3a2448a3ffe2f39073 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_7b54fa6034ae3ef68adf2fd277e8d152 = $(`<div id="html_7b54fa6034ae3ef68adf2fd277e8d152" style="width: 100.0%; height: 100.0%;">Street: Kornburger Straße <br> Frequency: 6</div>`)[0];
+                popup_61b7e4d6f3c94a3a2448a3ffe2f39073.setContent(html_7b54fa6034ae3ef68adf2fd277e8d152);
+            
+        
+
+        circle_marker_491434ddc895cd15a9b08b0b0a76ff1f.bindPopup(popup_61b7e4d6f3c94a3a2448a3ffe2f39073)
+        ;
+
+        
+    
+    
+            var circle_marker_41c1c3da7cbf221ffa06f3b61a3be5c4 = L.circleMarker(
+                [49.3536415, 11.0549994],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_025d250910f2f70c4366f04e35b106f7);
+        
+    
+        var popup_8116611d0fd0f4af9ffd00a1e4073537 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_d042165e47cd6008d135e3a1ed7ec77d = $(`<div id="html_d042165e47cd6008d135e3a1ed7ec77d" style="width: 100.0%; height: 100.0%;">Street: Weiherhauser Straße <br> Frequency: 5</div>`)[0];
+                popup_8116611d0fd0f4af9ffd00a1e4073537.setContent(html_d042165e47cd6008d135e3a1ed7ec77d);
+            
+        
+
+        circle_marker_41c1c3da7cbf221ffa06f3b61a3be5c4.bindPopup(popup_8116611d0fd0f4af9ffd00a1e4073537)
+        ;
+
+        
+    
+    
+            var circle_marker_7e851f19c03200e3eef66a02f0eef6f3 = L.circleMarker(
+                [49.413389, 11.175091],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_025d250910f2f70c4366f04e35b106f7);
+        
+    
+        var popup_5d4cb2ca78c00fc1c4edc06cc02d3980 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_92ec402918bb6adadeec754f94a16552 = $(`<div id="html_92ec402918bb6adadeec754f94a16552" style="width: 100.0%; height: 100.0%;">Street: Fischbach Bahnhof <br> Frequency: 5</div>`)[0];
+                popup_5d4cb2ca78c00fc1c4edc06cc02d3980.setContent(html_92ec402918bb6adadeec754f94a16552);
+            
+        
+
+        circle_marker_7e851f19c03200e3eef66a02f0eef6f3.bindPopup(popup_5d4cb2ca78c00fc1c4edc06cc02d3980)
+        ;
+
+        
+    
+    
+            var circle_marker_3aca5d633f2a55d798b8c54e1966062b = L.circleMarker(
+                [49.51463, 11.03384],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_025d250910f2f70c4366f04e35b106f7);
+        
+    
+        var popup_a979f4b588115c81fc842a031f23f763 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_83550b224c756003da87c08b28101536 = $(`<div id="html_83550b224c756003da87c08b28101536" style="width: 100.0%; height: 100.0%;">Street: Boxdorf <br> Frequency: 4</div>`)[0];
+                popup_a979f4b588115c81fc842a031f23f763.setContent(html_83550b224c756003da87c08b28101536);
+            
+        
+
+        circle_marker_3aca5d633f2a55d798b8c54e1966062b.bindPopup(popup_a979f4b588115c81fc842a031f23f763)
+        ;
+
+        
+    
+    
+            var circle_marker_eb25652b73620d5204805ee3205a02fb = L.circleMarker(
+                [49.4887657, 11.1164503],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_025d250910f2f70c4366f04e35b106f7);
+        
+    
+        var popup_a67aac5eb95a0472cd906a8d0ad7e360 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_455a709bed1184f9832897b4cd56f5c3 = $(`<div id="html_455a709bed1184f9832897b4cd56f5c3" style="width: 100.0%; height: 100.0%;">Street: Thuisbrunner Straße <br> Frequency: 3</div>`)[0];
+                popup_a67aac5eb95a0472cd906a8d0ad7e360.setContent(html_455a709bed1184f9832897b4cd56f5c3);
+            
+        
+
+        circle_marker_eb25652b73620d5204805ee3205a02fb.bindPopup(popup_a67aac5eb95a0472cd906a8d0ad7e360)
+        ;
+
+        
+    
+    
+            var circle_marker_33e098ae01b1923467763e518e5f4db0 = L.circleMarker(
+                [49.516344, 11.036744],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_025d250910f2f70c4366f04e35b106f7);
+        
+    
+        var popup_a6252423d55cac68d0ba97bbd2104aee = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_59cc75cf4c5e986473a8e2d0ae4b6c30 = $(`<div id="html_59cc75cf4c5e986473a8e2d0ae4b6c30" style="width: 100.0%; height: 100.0%;">Street: Neunhof Schule <br> Frequency: 3</div>`)[0];
+                popup_a6252423d55cac68d0ba97bbd2104aee.setContent(html_59cc75cf4c5e986473a8e2d0ae4b6c30);
+            
+        
+
+        circle_marker_33e098ae01b1923467763e518e5f4db0.bindPopup(popup_a6252423d55cac68d0ba97bbd2104aee)
+        ;
+
+        
+    
+    
+            var circle_marker_9c1d64d97f56489e88a15df42fabc8c4 = L.circleMarker(
+                [49.420238, 11.08347],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_025d250910f2f70c4366f04e35b106f7);
+        
+    
+        var popup_875bbfb39a9ef9830fa930c0570ca396 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_0ac7ca3d27a318e73cec5e2d04ca60fd = $(`<div id="html_0ac7ca3d27a318e73cec5e2d04ca60fd" style="width: 100.0%; height: 100.0%;">Street: Am Rangierbahnhof <br> Frequency: 2</div>`)[0];
+                popup_875bbfb39a9ef9830fa930c0570ca396.setContent(html_0ac7ca3d27a318e73cec5e2d04ca60fd);
+            
+        
+
+        circle_marker_9c1d64d97f56489e88a15df42fabc8c4.bindPopup(popup_875bbfb39a9ef9830fa930c0570ca396)
+        ;
+
+        
+    
+    
+            var circle_marker_4b00a7c70526a7ec975dc7f9c16c369e = L.circleMarker(
+                [49.4929161, 11.1095505],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_025d250910f2f70c4366f04e35b106f7);
+        
+    
+        var popup_bcb537291336b292080a2812df31a12b = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_280e984fe2a04cd5086a7ce90421f89d = $(`<div id="html_280e984fe2a04cd5086a7ce90421f89d" style="width: 100.0%; height: 100.0%;">Street: Buchenbühler Weg <br> Frequency: 2</div>`)[0];
+                popup_bcb537291336b292080a2812df31a12b.setContent(html_280e984fe2a04cd5086a7ce90421f89d);
+            
+        
+
+        circle_marker_4b00a7c70526a7ec975dc7f9c16c369e.bindPopup(popup_bcb537291336b292080a2812df31a12b)
+        ;
+
+        
+    
+    
+            var circle_marker_127652efad8edaeafa7b38d0b791adc7 = L.circleMarker(
+                [49.5310822, 11.01861],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_025d250910f2f70c4366f04e35b106f7);
+        
+    
+        var popup_e2717e82793c5809eb7eb1a638d01107 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_64def7a1cfd4a886503d76cee492b830 = $(`<div id="html_64def7a1cfd4a886503d76cee492b830" style="width: 100.0%; height: 100.0%;">Street: Großgründlach Nord <br> Frequency: 2</div>`)[0];
+                popup_e2717e82793c5809eb7eb1a638d01107.setContent(html_64def7a1cfd4a886503d76cee492b830);
+            
+        
+
+        circle_marker_127652efad8edaeafa7b38d0b791adc7.bindPopup(popup_e2717e82793c5809eb7eb1a638d01107)
+        ;
+
+        
+    
+    
+            var circle_marker_ad59bff439d6fe657f4918c6ad698797 = L.circleMarker(
+                [49.5111389, 11.0493679],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_025d250910f2f70c4366f04e35b106f7);
+        
+    
+        var popup_2669cbd770abd4d4224b02fc4e384a87 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_4da24ead6460123a6dc50c9d6d441d04 = $(`<div id="html_4da24ead6460123a6dc50c9d6d441d04" style="width: 100.0%; height: 100.0%;">Street: Kraftshof <br> Frequency: 2</div>`)[0];
+                popup_2669cbd770abd4d4224b02fc4e384a87.setContent(html_4da24ead6460123a6dc50c9d6d441d04);
+            
+        
+
+        circle_marker_ad59bff439d6fe657f4918c6ad698797.bindPopup(popup_2669cbd770abd4d4224b02fc4e384a87)
+        ;
+
+        
+    
+    
+            var circle_marker_b600422eafc0742d54ec287d5227d551 = L.circleMarker(
+                [49.406977, 11.094713],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_025d250910f2f70c4366f04e35b106f7);
+        
+    
+        var popup_e5e42b7676ce99f9151d8b09370d8a40 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_14714d24b6173aff76e4e4eaed859905 = $(`<div id="html_14714d24b6173aff76e4e4eaed859905" style="width: 100.0%; height: 100.0%;">Street: Worzeldorfer Straße <br> Frequency: 2</div>`)[0];
+                popup_e5e42b7676ce99f9151d8b09370d8a40.setContent(html_14714d24b6173aff76e4e4eaed859905);
+            
+        
+
+        circle_marker_b600422eafc0742d54ec287d5227d551.bindPopup(popup_e5e42b7676ce99f9151d8b09370d8a40)
+        ;
+
+        
+    
+    
+            var circle_marker_4f0e432f8125afb1975c443fe2050ac9 = L.circleMarker(
+                [49.4900589, 11.0623045],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_025d250910f2f70c4366f04e35b106f7);
+        
+    
+        var popup_e4590476ba282d0cdcf0271643df9bac = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_af56470a8bd03f18c29e54b27117e36b = $(`<div id="html_af56470a8bd03f18c29e54b27117e36b" style="width: 100.0%; height: 100.0%;">Street: Almoshof <br> Frequency: 2</div>`)[0];
+                popup_e4590476ba282d0cdcf0271643df9bac.setContent(html_af56470a8bd03f18c29e54b27117e36b);
+            
+        
+
+        circle_marker_4f0e432f8125afb1975c443fe2050ac9.bindPopup(popup_e4590476ba282d0cdcf0271643df9bac)
+        ;
+
+        
+    
+</script>
+</html>
