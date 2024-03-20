@@ -1,9 +1,15 @@
-Here is a structured `README.md` for your GitHub repository based on the files and instructions you've provided, as well as the visualizations that seem to be part of your analysis:
-
-```markdown
 # NurembergTransitRentAnalysis
 
 Exploring the correlation between public transport stops and rental prices in Nuremberg to provide insights for optimizing transportation networks and housing accessibility. Utilizes datasets on Nuremberg Stops and Immoscout24 listings, employing data analysis and visualization techniques.
+
+
+## Disclaimer
+This project is associated with the "AMSE/SAKI 2023 Project" under the "AI Systems and Applications" pillar, part of the Master of Science in Artificial Intelligence degree at Friedrich-Alexander-Universität Erlangen-Nürnberg and [FAU Open-Source Software](https://oss.cs.fau.de/). Check out the original coursework/project at [AMSE Repo](https://github.com/gmMustafa/2023-amse-template)
+ 
+
+<img src="https://github.com/gmMustafa/facial_emotion_detection/assets/26876754/d94d54c8-a95d-4bd0-935a-6a714e6bb909" alt="Friedrich-Alexander-Universität Erlangen-Nürnberg" width="250" height="80">
+<img src="https://github.com/gmMustafa/facial_emotion_detection/assets/26876754/c7c5b268-b17e-4dd1-ac02-c1e141d3f61c" alt="FAU OSS" width="250" height="180">
+<br />
 
 ## Repository Structure
 - `pipeline.py`: The main executable script that processes data and generates the SQLite database.
@@ -42,9 +48,26 @@ Exploring the correlation between public transport stops and rental prices in Nu
 7. For a detailed analysis, open and review the `report.ipynb` notebook.
 
 ## Visualization and Analysis
-The repository includes interactive maps (`frequency_map.html` and `rental_map.html`) that provide a visual representation of the dataset's geographical information. Additionally, the pie and bar chart images (`listing_pie.png` and `listing_bar.png`) offer a clear distribution of apartments based on their location in Nuremberg.
+The repository includes interactive maps (`frequency_map.html` and `rental_map.html`) that provide a visual representation of the dataset's geographical information. 
 
-For a complete walkthrough of the analysis process and findings, refer to the Jupyter notebooks included in the repository.
+
+<img src="https://github.com/gmMustafa/NurembergTransitRentAnalysis/assets/26876754/2d0f2b71-257d-4296-9df5-d540f9a25595" alt="rental_map1"  height="500">
+<br />
+<br />
+<img src="https://github.com/gmMustafa/NurembergTransitRentAnalysis/assets/26876754/3620ce7b-cc3b-454a-83e3-21f0dd37d437" alt="frequency_map"  height="500">
+<br />
+<br />
+Additionally, the pie and bar chart images (`listing_pie.png` and `listing_bar.png`) offer a clear distribution of apartments based on their location in Nuremberg.
+<br />
+<br />
+<img src="https://github.com/gmMustafa/NurembergTransitRentAnalysis/assets/26876754/c182f4a8-4b2f-438a-9b34-15519962ffa0" alt="listing_bar"  height="500">
+<br />
+<br />
+<img src="https://github.com/gmMustafa/NurembergTransitRentAnalysis/assets/26876754/1e056253-eea7-471c-b16e-b2cc3105fc61" alt="listing_pie"  height="500">
+
+
+For a complete walkthrough of the analysis process and findings, refer to the Jupyter notebooks included in the repository. or For a detailed exploration of the project's methodology, evaluation, and insights, refer to the presentation slides in the repo.
+
 
 ## Contribution
 Feel free to fork the repository, submit pull requests, or suggest improvements by opening an issue.
@@ -53,12 +76,3 @@ Feel free to fork the repository, submit pull requests, or suggest improvements 
 This project is licensed under the MIT License - see [LICENSE](LICENSE.md) for details.
 
 
-
-## Disclaimer
-This project is associated with the "AMSE/SAKI 2023 Project" under the "AI Systems and Applications" pillar, part of the Master of Science in Artificial Intelligence degree at Friedrich-Alexander-Universität Erlangen-Nürnberg.
-
-For a detailed exploration of the project's methodology, evaluation, and insights, refer to the presentation slides in the repo.
-
-<img src="https://github.com/gmMustafa/facial_emotion_detection/assets/26876754/d94d54c8-a95d-4bd0-935a-6a714e6bb909" alt="Friedrich-Alexander-Universität Erlangen-Nürnberg" width="250" height="80">
-
-```
